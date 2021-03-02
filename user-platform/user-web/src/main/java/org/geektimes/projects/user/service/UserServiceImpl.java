@@ -8,12 +8,16 @@ import org.geektimes.projects.user.domain.User;
  * @Date 2021/3/1 22:57
  */
 public class UserServiceImpl implements UserService{
+
+
+
     @Override
     public boolean register(User user) {
         return false;
     }
 
     @Override
+
     public boolean deregister(User user) {
         return false;
     }

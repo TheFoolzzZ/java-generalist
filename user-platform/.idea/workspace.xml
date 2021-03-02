@@ -7,11 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fd19142-89f6-4999-9ab1-8e30ee13bce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/database/DataBaseInitialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/database/OrmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/webapp/fail-page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/user_web_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/user_web_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd2da94e-6cb6-4233-9c5c-ea6460fcfada.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd2da94e-6cb6-4233-9c5c-ea6460fcfada.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +55,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -44,10 +67,19 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="H:\apache-maven-3.3.9\conf\settings_local.xml" />
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="H:\apache-maven-3.3.9\conf\settings_default.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true -DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1p5jVAeIeTVBFJW3bsTakKrOVwP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,13 +93,15 @@
     <property name="DatabaseDriversLRU" value="derby" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/lesson2/mercyblitz-projects/projects/stage-0/user-platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/user-web/src/main/webapp" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.39195403" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -75,6 +109,7 @@
       <recent name="org.geektimes.projects.user.web.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\workspace\java-generalist\user-platform\user-web\src\main\webapp" />
       <recent name="H:\workspace\geekbang-lessons\projects\stage-0\user-platform\user-web\src\main\webapp" />
     </key>
   </component>
@@ -187,37 +222,49 @@
       <workItem from="1614479868337" duration="994000" />
       <workItem from="1614604765012" duration="5031000" />
       <workItem from="1614609825637" duration="1634000" />
+      <workItem from="1614690453363" duration="347000" />
+      <workItem from="1614690823558" duration="632000" />
+      <workItem from="1614691477678" duration="24000" />
+      <workItem from="1614691573759" duration="334000" />
+      <workItem from="1614692142797" duration="782000" />
+      <workItem from="1614692949418" duration="1471000" />
+      <workItem from="1614695225913" duration="1353000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1528" y="579" key="#Tomcat_Server" timestamp="1614605415807">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1528" y="579" key="#Tomcat_Server/0.0.3440.1400@0.0.3440.1400" timestamp="1614605415807" />
-    <state x="1613" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614610620398">
+    <state x="2046" y="180" width="1221" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614692642237">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1613" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614610620398" />
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1614610655591">
+    <state x="2046" y="180" width="1221" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614692642237" />
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1614696495283">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1614610655591" />
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1614696495283" />
     <state x="2335" y="319" key="#xdebugger.evaluate" timestamp="1614606511260">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2335" y="319" key="#xdebugger.evaluate/0.0.3440.1400@0.0.3440.1400" timestamp="1614606511260" />
-    <state x="2339" y="384" key="FileChooserDialogImpl" timestamp="1614609026278">
+    <state x="2339" y="384" key="FileChooserDialogImpl" timestamp="1614692925842">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2339" y="384" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1614609026278" />
-    <state width="480" height="609" key="Git.Branch.Popup" timestamp="1614611226584">
+    <state x="2339" y="384" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1614692925842" />
+    <state width="482" height="611" key="Git.Branch.Popup" timestamp="1614690980690">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="480" height="609" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614611226584" />
+    <state width="482" height="611" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614690980690" />
     <state width="1929" height="390" key="GridCell.Tab.0.bottom" timestamp="1614609805997">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -286,17 +333,25 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="220" height="539" key="HiddenNamespacesPopup/0.0.3440.1400@0.0.3440.1400" timestamp="1614609408995" />
-    <state x="2060" y="274" key="SettingsEditor" timestamp="1614607666027">
+    <state x="1457" y="339" key="SettingsEditor" timestamp="1614692244896">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2060" y="274" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1614607666027" />
-    <state x="2281" y="420" width="596" height="568" key="find.popup" timestamp="1614609113348">
+    <state x="1457" y="339" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1614692244896" />
+    <state x="1543" y="466" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1614695659280">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2281" y="420" width="596" height="568" key="find.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614609113348" />
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1614492726304">
+    <state x="1543" y="466" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614695659280" />
+    <state x="2281" y="420" width="596" height="568" key="find.popup" timestamp="1614691404019">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614492726304" />
+    <state x="2281" y="420" width="596" height="568" key="find.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614691404019" />
+    <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614691010062">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614691010062" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1614693263116">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614693263116" />
   </component>
 </project>
