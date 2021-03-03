@@ -1,6 +1,10 @@
 package org.geektimes.projects.user.service;
 
+import org.geektimes.projects.user.database.DataBaseInitialization;
 import org.geektimes.projects.user.domain.User;
+
+import java.sql.Connection;
+import java.sql.Statement;
 
 /**
  * @description
@@ -8,12 +12,22 @@ import org.geektimes.projects.user.domain.User;
  * @Date 2021/3/1 22:57
  */
 public class UserServiceImpl implements UserService{
+    DataBaseInitialization dataBase = DataBaseInitialization.getInstance();
 
-
+    public static final String INSERT_USER_DML_SQL = "INSERT INTO users(name,password,email,phoneNumber) VALUES " +
+            "(%s ,%s ,%s ,%s);";
 
     @Override
-    public boolean register(User user) {
-        return false;
+    public boolean register(User user){
+        try {
+            Connection connection = dataBase.getConnection();
+            Statement statement = connection.createStatement();
+            String insertSql = String.format(INSERT_USER_DML_SQL, user.getName(), user.getPassword(), user.getEmail(), user.getPhoneNumber());
+            dataBase.releaseConnection();
+            return statement.executeUpdate(insertSql)==1;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override

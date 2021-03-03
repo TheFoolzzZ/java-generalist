@@ -1,8 +1,8 @@
 package org.geektimes.projects.user.web.controller;
 
 import org.apache.commons.lang.StringUtils;
-import org.geektimes.projects.user.database.OrmService;
 import org.geektimes.projects.user.domain.User;
+import org.geektimes.projects.user.service.UserServiceImpl;
 import org.geektimes.web.mvc.controller.PageController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ import javax.ws.rs.Path;
 @Path("/register")
 public class RegisterController implements PageController {
 
-    OrmService ormService = new OrmService();
+    UserServiceImpl userService = new UserServiceImpl();
 
     @Override
     @POST
@@ -32,7 +32,7 @@ public class RegisterController implements PageController {
             if(StringUtils.equals(password,repeatPassword)) return "密码不一致请重新输入";
         }
         try {
-            if (ormService.register(new User(userId, password, email, phoneNumber)) == 1) {
+            if (userService.register(new User(userId, password, email, phoneNumber))) {
                 return "login-form.jsp";
             }
         } catch (Exception e) {
