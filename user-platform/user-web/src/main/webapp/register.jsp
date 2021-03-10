@@ -23,7 +23,9 @@
 		<form action="/register" method="post">
 			<h1 class="h3 mb-3 font-weight-normal">注册页面</h1>
 			<input type="text" name="userId" class="form-control" placeholder="请输入用户名" required>
-			<input type="password" name="password" class="form-control" placeholder="请输入密码" required>
+			<input type="email" name="email" class="form-control" placeholder="请输入邮箱地址" required>
+			<input type="text" name="phoneNum" class="form-control" placeholder="请输入11位中国电话号码" required>
+			<input type="password" name="password" class="form-control" placeholder="请输入：6-23位密码" required>
 			<input type="password" name="repeatPassword" class="form-control" placeholder="请再次输入密码" required>
 			<div class="checkbox mb-3">
 				<label> <input type="checkbox" value="remember-me">

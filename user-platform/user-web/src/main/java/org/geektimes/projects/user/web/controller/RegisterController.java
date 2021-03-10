@@ -2,9 +2,10 @@ package org.geektimes.projects.user.web.controller;
 
 import org.apache.commons.lang.StringUtils;
 import org.geektimes.projects.user.domain.User;
-import org.geektimes.projects.user.service.UserServiceImpl;
+import org.geektimes.projects.user.service.UserService;
 import org.geektimes.web.mvc.controller.PageController;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.POST;
@@ -15,29 +16,27 @@ import javax.ws.rs.Path;
  */
 @Path("/register")
 public class RegisterController implements PageController {
+    @Resource
+    private UserService userService;
 
-    UserServiceImpl userService = new UserServiceImpl();
-
-    @Override
     @POST
+    @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Throwable {
         String userId = request.getParameter("userId");
         String password = request.getParameter("password");
         String repeatPassword = request.getParameter("repeatPassword");
         String email = request.getParameter("email");
-        String phoneNumber = request.getParameter("phoneNumber");
+        String phoneNum = request.getParameter("phoneNum");
         if (StringUtils.isBlank(userId) || StringUtils.isBlank(password)) {
             return "register.jsp";
         }else{
             if(StringUtils.equals(password,repeatPassword)) return "密码不一致请重新输入";
         }
-        try {
-            if (userService.register(new User(userId, password, email, phoneNumber))) {
-                return "login-form.jsp";
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        boolean register = userService.register(new User(userId, password, email, phoneNum));
+        if (register) {
+            return "login-form.jsp";
         }
-        return "fail-page.jsp";
+        return "注册失败";
     }
+
 }

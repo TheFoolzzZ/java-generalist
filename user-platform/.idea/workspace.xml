@@ -7,9 +7,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fd19142-89f6-4999-9ab1-8e30ee13bce5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_el_javax_el_api_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_7_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/context/ComponentContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/function/ThrowableAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/enums/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/DelegatingEntityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/JpaDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/LocalTransactional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/validator/bean/validation/BeanValidationDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/validator/bean/validation/DelegatingValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/validator/bean/validation/UserValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/validator/bean/validation/UserValidAnnotationValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/ComponentContextInitializerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/TestingListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/jpa-datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/target/classes/META-INF/jpa-datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/target/classes/META-INF/user-web.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/repository/DatabaseUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/sql/DBConnectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/target/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/target/classes/META-INF/services/org.geektimes.web.mvc.controller.Controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +87,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="week1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
@@ -72,9 +134,9 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/user-web/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.39195403" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -181,6 +243,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.DBConnectionManager" />
+        <item itemvalue="Application.DBConnectionManager" />
+        <item itemvalue="Application.DBConnectionManager" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +269,8 @@
       <workItem from="1614692949418" duration="1471000" />
       <workItem from="1614695225913" duration="1726000" />
       <workItem from="1614788279423" duration="162000" />
+      <workItem from="1615029588889" duration="326000" />
+      <workItem from="1615384458128" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="提交说明：初步代码逻辑实现&#10;提交人:theFool">
       <created>1614696650098</created>
@@ -235,10 +301,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2046" y="180" width="1221" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614692642237" />
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1614696495283">
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1615386317054">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1614696495283" />
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1615386317054" />
     <state x="2335" y="319" key="#xdebugger.evaluate" timestamp="1614606511260">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -251,10 +317,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2339" y="384" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1614692925842" />
-    <state width="482" height="611" key="Git.Branch.Popup" timestamp="1614690980690">
+    <state width="492" height="621" key="Git.Branch.Popup" timestamp="1615385937979">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="482" height="611" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614690980690" />
+    <state width="492" height="621" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615385937979" />
     <state width="1929" height="390" key="GridCell.Tab.0.bottom" timestamp="1614609805997">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -323,14 +389,18 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="220" height="539" key="HiddenNamespacesPopup/0.0.3440.1400@0.0.3440.1400" timestamp="1614609408995" />
-    <state x="1457" y="339" key="SettingsEditor" timestamp="1614692244896">
+    <state x="1457" y="339" key="SettingsEditor" timestamp="1615029642763">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1457" y="339" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1614692244896" />
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1614696651989">
+    <state x="1457" y="339" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1615029642763" />
+    <state x="1441" y="441" width="540" height="524" key="StructurePopup" timestamp="1615385112856">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1614696651989" />
+    <state x="1441" y="441" width="540" height="524" key="StructurePopup/0.0.3440.1400@0.0.3440.1400" timestamp="1615385112856" />
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1615385949037">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615385949037" />
     <state x="1543" y="466" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1614695659280">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -343,9 +413,9 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614691010062" />
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1614693263116">
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1615029869376">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1614693263116" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615029869376" />
   </component>
 </project>
