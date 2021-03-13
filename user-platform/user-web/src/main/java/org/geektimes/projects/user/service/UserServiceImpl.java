@@ -1,19 +1,32 @@
 package org.geektimes.projects.user.service;
 
+import org.apache.commons.lang.StringUtils;
 import org.geektimes.projects.user.domain.User;
+import org.geektimes.projects.user.repository.UserRepository;
 import org.geektimes.projects.user.sql.LocalTransactional;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;
+import javax.validation.ConstraintViolation;
+import javax.validation.ValidationException;
 import javax.validation.Validator;
+import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class UserServiceImpl implements UserService {
 
     @Resource(name = "bean/EntityManager")
     private EntityManager entityManager;
 
-    @Resource(name = "bean/Validator")
+    @Resource(name = "bean/DatabaseUserRepository")
+    private UserRepository userRepository;
+
+    @Resource(name = "bean/DelegatingValidator")
     private Validator validator;
+
+    private final Logger logger = Logger.getLogger(UserServiceImpl.class.getName());
 
     @Override
     // 默认需要事务
@@ -23,13 +36,21 @@ public class UserServiceImpl implements UserService {
 //        EntityTransaction transaction = entityManager.getTransaction();
 //        transaction.begin();
 
-        validator.validate(user);
+        Set<ConstraintViolation<User>> resultSet = validator.validate(user);
+        if (!resultSet.isEmpty()) {
+            String msg = StringUtils.join(resultSet.stream().map(ConstraintViolation::getMessage).collect(Collectors.toList()), ",");
+            logger.log(Level.WARNING, msg);
+            throw new ValidationException("传入参数异常：" + msg);
+        }
+
+        return userRepository.save(user);
+
 
         // 主调用
-        entityManager.persist(user);
+//        entityManager.persist(user);
 
         // 调用其他方法方法
-        update(user);
+//        update(user);
         // 涉及事务
         // register 方法和 update 方法存在于同一线程
         // register 方法属于 Outer 事务（逻辑）
@@ -56,7 +77,6 @@ public class UserServiceImpl implements UserService {
         // after process
         // transaction.commit();
 
-        return true;
     }
 
     @Override

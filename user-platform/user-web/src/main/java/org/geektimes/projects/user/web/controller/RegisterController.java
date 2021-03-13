@@ -16,7 +16,8 @@ import javax.ws.rs.Path;
  */
 @Path("/register")
 public class RegisterController implements PageController {
-    @Resource
+
+    @Resource(name = "bean/UserServiceImpl")
     private UserService userService;
 
     @POST
@@ -32,7 +33,13 @@ public class RegisterController implements PageController {
         }else{
             if(StringUtils.equals(password,repeatPassword)) return "密码不一致请重新输入";
         }
-        boolean register = userService.register(new User(userId, password, email, phoneNum));
+        boolean register = false;
+        try {
+            register = userService.register(new User(userId, password, email, phoneNum));
+        } catch (Exception e) {
+            request.setAttribute("fail_reason", e.getMessage());
+            return "fail-page.jsp";
+        }
         if (register) {
             return "login-form.jsp";
         }
