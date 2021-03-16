@@ -91,8 +91,8 @@ public class ComponentContext {
             injectComponents(component, componentClass);
             // 初始阶段 - {@link PostConstruct}
             processPostConstruct(component, componentClass);
-            // 实现销毁阶段 - {@link PreDestroy}
-            processPreDestroy(component, componentClass);
+            // TODO 实现销毁阶段 - {@link PreDestroy}
+            processPreDestroy();
         });
     }
 
@@ -131,20 +131,8 @@ public class ComponentContext {
         });
     }
 
-    private void processPreDestroy(Object component, Class<?> componentClass) {
-        Stream.of(componentClass.getMethods())
-                .filter(method ->
-                        !Modifier.isStatic(method.getModifiers()) &&      // 非 static
-                                method.getParameterCount() == 0 &&        // 没有参数
-                                method.isAnnotationPresent(PreDestroy.class) // 标注 @PreDestroy
-                ).forEach(method -> {
-            // 执行目标方法
-            try {
-                Object invoke = method.invoke(component);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        });
+    private void processPreDestroy() {
+        // TODO
     }
 
     /**
@@ -187,7 +175,7 @@ public class ComponentContext {
         return result;
     }
 
-    protected <C> C lookupComponent(String name) {
+    public <C> C lookupComponent(String name) {
         return executeInContext(context -> (C) context.lookup(name));
     }
 

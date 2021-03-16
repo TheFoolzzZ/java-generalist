@@ -7,10 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fd19142-89f6-4999-9ab1-8e30ee13bce5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/DefaultConfigProviderResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/JavaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/source/JavaSystemPropertiesConfigSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/logging/UserWebLoggingConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/PlatformJMXMBeansDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/StandardMBeanDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMBeanDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMXBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserManagerMBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.Config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigProviderResolver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigSource" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.Converter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/test/java/org/geektimes/configuration/demo/PreferencesDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/context/ComponentContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/context/ComponentContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/DelegatingEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/DelegatingEntityManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/TestingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/TestingListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,18 +105,19 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../geekbang-lessons/projects/stage-0/user-platform" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.39195403" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.geektimes.projects.user.web.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\workspace\java-generalist\user-platform" />
       <recent name="H:\workspace\java-generalist\user-platform\user-web\src\main\webapp" />
       <recent name="H:\workspace\geekbang-lessons\projects\stage-0\user-platform\user-web\src\main\webapp" />
     </key>
@@ -190,6 +218,7 @@
         <item itemvalue="Application.DBConnectionManager" />
         <item itemvalue="Application.DBConnectionManager" />
         <item itemvalue="Application.DBConnectionManager" />
+        <item itemvalue="Application.DBConnectionManager" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +245,8 @@
       <workItem from="1614788279423" duration="162000" />
       <workItem from="1615029588889" duration="326000" />
       <workItem from="1615384458128" duration="1995000" />
+      <workItem from="1615726814697" duration="2281000" />
+      <workItem from="1615817488985" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="提交说明：初步代码逻辑实现&#10;提交人:theFool">
       <created>1614696650098</created>
@@ -224,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614696650098</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提交说明：委派实现修改&#10;提交人:theFool">
+      <created>1615627368274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615627368275</updated>
+    </task>
+    <task id="LOCAL-00003" summary="提交说明：ignore&#10;提交人:theFool">
+      <created>1615627439315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615627439315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +280,9 @@
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
     <MESSAGE value="提交说明：初步代码逻辑实现&#10;提交人:theFool" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交说明：初步代码逻辑实现&#10;提交人:theFool" />
+    <MESSAGE value="提交说明：委派实现修改&#10;提交人:theFool" />
+    <MESSAGE value="提交说明：ignore&#10;提交人:theFool" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交说明：ignore&#10;提交人:theFool" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1528" y="579" key="#Tomcat_Server" timestamp="1614605415807">
@@ -254,22 +301,22 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2335" y="319" key="#xdebugger.evaluate/0.0.3440.1400@0.0.3440.1400" timestamp="1614606511260" />
-    <state x="1286" y="178" key="CommitChangelistDialog2" timestamp="1614696647723">
+    <state x="1286" y="178" key="CommitChangelistDialog2" timestamp="1615627436637">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1286" y="178" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1614696647723" />
+    <state x="1286" y="178" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1615627436637" />
     <state x="92" y="92" width="3256" height="1216" key="DiffContextDialog" timestamp="1615627282708">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="92" y="92" width="3256" height="1216" key="DiffContextDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1615627282708" />
-    <state x="2339" y="384" key="FileChooserDialogImpl" timestamp="1614692925842">
+    <state x="2339" y="384" key="FileChooserDialogImpl" timestamp="1615817525004">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2339" y="384" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1614692925842" />
-    <state width="496" height="625" key="Git.Branch.Popup" timestamp="1615627066706">
+    <state x="2339" y="384" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1615817525004" />
+    <state width="502" height="631" key="Git.Branch.Popup" timestamp="1615817949278">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="496" height="625" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615627066706" />
+    <state width="502" height="631" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615817949278" />
     <state width="1929" height="390" key="GridCell.Tab.0.bottom" timestamp="1614609805997">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -338,18 +385,18 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="220" height="539" key="HiddenNamespacesPopup/0.0.3440.1400@0.0.3440.1400" timestamp="1614609408995" />
-    <state x="1457" y="339" key="SettingsEditor" timestamp="1615029642763">
+    <state x="1457" y="339" key="SettingsEditor" timestamp="1615727145880">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1457" y="339" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1615029642763" />
-    <state x="1441" y="441" width="540" height="524" key="StructurePopup" timestamp="1615385112856">
+    <state x="1457" y="339" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1615727145880" />
+    <state x="1441" y="441" width="597" height="524" key="StructurePopup" timestamp="1615727097475">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1441" y="441" width="540" height="524" key="StructurePopup/0.0.3440.1400@0.0.3440.1400" timestamp="1615385112856" />
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1615627056556">
+    <state x="1441" y="441" width="597" height="524" key="StructurePopup/0.0.3440.1400@0.0.3440.1400" timestamp="1615727097475" />
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1615817951777">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615627056556" />
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615817951777" />
     <state x="1543" y="466" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1614695659280">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -366,13 +413,17 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2281" y="420" width="596" height="568" key="find.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615627305558" />
+    <state x="1499" y="478" key="git4idea.merge.GitMergeDialog" timestamp="1615817918022">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1499" y="478" key="git4idea.merge.GitMergeDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1615817918022" />
     <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614691010062">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614691010062" />
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1615029869376">
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1615731022190">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615029869376" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615731022190" />
   </component>
 </project>

@@ -45,9 +45,7 @@
 			  type="org.geektimes.projects.user.service.UserServiceImpl"
 			  factory="org.apache.naming.factory.BeanFactory" />
 
-
-	<Resource name="bean/RegisterController" auth="Container"
-			  type="org.geektimes.projects.user.web.controller.RegisterController"
-			  factory="org.apache.naming.factory.BeanFactory" />
-
+	<!-- Tomcat JNDI 配置 -->
+	<Environment name="maxValue" value="12"
+				 type="java.lang.Integer" override="false"/>
 </Context>
