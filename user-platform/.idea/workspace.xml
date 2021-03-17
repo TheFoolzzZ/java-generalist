@@ -7,37 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fd19142-89f6-4999-9ab1-8e30ee13bce5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/DefaultConfigProviderResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/JavaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/source/JavaSystemPropertiesConfigSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/logging/UserWebLoggingConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/PlatformJMXMBeansDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/StandardMBeanDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMBeanDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMXBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserManagerMBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.Config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigProviderResolver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigSource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.Converter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-web/src/test/java/org/geektimes/configuration/demo/PreferencesDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/user_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/BigDecimalConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/BooleanConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/ByteConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/DoubleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/FloatConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/IntegerConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/LongConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/ObjectConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/converter/ShortConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/source/OSPropertiesConfigSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/context/ComponentContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/context/ComponentContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/DelegatingEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/orm/jpa/DelegatingEntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/TestingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/web/listener/TestingListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/JavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/configuration/microprofile/config/JavaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMBeanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/java/org/geektimes/projects/user/management/UserMBeanDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigSource" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.ConfigSource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.Converter" beforeDir="false" afterPath="$PROJECT_DIR$/user-web/src/main/resources/META-INF/services/org.eclipse.microprofile.config.spi.Converter" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.geektimes.configuration.microprofile.config.converter" />
       <recent name="org.geektimes.projects.user.web.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -122,13 +107,26 @@
       <recent name="H:\workspace\geekbang-lessons\projects\stage-0\user-platform\user-web\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DBConnectionManager">
+  <component name="RunManager" selected="Application.UserMBeanDemo">
     <configuration name="DBConnectionManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.geektimes.projects.user.sql.DBConnectionManager" />
       <module name="user-web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.geektimes.projects.user.sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMBeanDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.geektimes.projects.user.management.UserMBeanDemo" />
+      <module name="user-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.geektimes.projects.user.management.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,10 +209,11 @@
     <list>
       <item itemvalue="Application.DBConnectionManager" />
       <item itemvalue="Tomcat Server.local" />
+      <item itemvalue="Application.UserMBeanDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DBConnectionManager" />
+        <item itemvalue="Application.UserMBeanDemo" />
         <item itemvalue="Application.DBConnectionManager" />
         <item itemvalue="Application.DBConnectionManager" />
         <item itemvalue="Application.DBConnectionManager" />
@@ -247,6 +246,10 @@
       <workItem from="1615384458128" duration="1995000" />
       <workItem from="1615726814697" duration="2281000" />
       <workItem from="1615817488985" duration="1104000" />
+      <workItem from="1615902065717" duration="372000" />
+      <workItem from="1615905247431" duration="1096000" />
+      <workItem from="1615988612497" duration="625000" />
+      <workItem from="1615991640951" duration="4894000" />
     </task>
     <task id="LOCAL-00001" summary="提交说明：初步代码逻辑实现&#10;提交人:theFool">
       <created>1614696650098</created>
@@ -269,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615627439315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="提交说明：课件代码&#10;提交人:theFool">
+      <created>1615902143387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615902143387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +292,8 @@
     <MESSAGE value="提交说明：初步代码逻辑实现&#10;提交人:theFool" />
     <MESSAGE value="提交说明：委派实现修改&#10;提交人:theFool" />
     <MESSAGE value="提交说明：ignore&#10;提交人:theFool" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交说明：ignore&#10;提交人:theFool" />
+    <MESSAGE value="提交说明：课件代码&#10;提交人:theFool" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交说明：课件代码&#10;提交人:theFool" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1528" y="579" key="#Tomcat_Server" timestamp="1614605415807">
@@ -293,18 +304,18 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2046" y="180" width="1221" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614692642237" />
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1615386317054">
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser" timestamp="1615996753595">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1615386317054" />
+    <state x="1353" y="405" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1615996753595" />
     <state x="2335" y="319" key="#xdebugger.evaluate" timestamp="1614606511260">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2335" y="319" key="#xdebugger.evaluate/0.0.3440.1400@0.0.3440.1400" timestamp="1614606511260" />
-    <state x="1286" y="178" key="CommitChangelistDialog2" timestamp="1615627436637">
+    <state x="1286" y="178" key="CommitChangelistDialog2" timestamp="1615902137418">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1286" y="178" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1615627436637" />
+    <state x="1286" y="178" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1615902137418" />
     <state x="92" y="92" width="3256" height="1216" key="DiffContextDialog" timestamp="1615627282708">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -317,38 +328,38 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state width="502" height="631" key="Git.Branch.Popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615817949278" />
-    <state width="1929" height="390" key="GridCell.Tab.0.bottom" timestamp="1614609805997">
+    <state width="3397" height="392" key="GridCell.Tab.0.bottom" timestamp="1615994212234">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1929" height="390" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805997" />
-    <state width="1929" height="390" key="GridCell.Tab.0.center" timestamp="1614609805997">
+    <state width="3397" height="392" key="GridCell.Tab.0.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1615994212234" />
+    <state width="3397" height="392" key="GridCell.Tab.0.center" timestamp="1615994212234">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1929" height="390" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805997" />
-    <state width="1929" height="390" key="GridCell.Tab.0.left" timestamp="1614609805996">
+    <state width="3397" height="392" key="GridCell.Tab.0.center/0.0.3440.1400@0.0.3440.1400" timestamp="1615994212234" />
+    <state width="3397" height="392" key="GridCell.Tab.0.left" timestamp="1615994212234">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1929" height="390" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805996" />
-    <state width="1929" height="390" key="GridCell.Tab.0.right" timestamp="1614609805997">
+    <state width="3397" height="392" key="GridCell.Tab.0.left/0.0.3440.1400@0.0.3440.1400" timestamp="1615994212234" />
+    <state width="3397" height="392" key="GridCell.Tab.0.right" timestamp="1615994212234">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1929" height="390" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805997" />
-    <state width="1151" height="397" key="GridCell.Tab.1.bottom" timestamp="1614609805993">
+    <state width="3397" height="392" key="GridCell.Tab.0.right/0.0.3440.1400@0.0.3440.1400" timestamp="1615994212234" />
+    <state width="1676" height="480" key="GridCell.Tab.1.bottom" timestamp="1615993466768">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1151" height="397" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805993" />
-    <state width="1151" height="397" key="GridCell.Tab.1.center" timestamp="1614609805993">
+    <state width="1676" height="480" key="GridCell.Tab.1.bottom/0.0.3440.1400@0.0.3440.1400" timestamp="1615993466768" />
+    <state width="1676" height="480" key="GridCell.Tab.1.center" timestamp="1615993466768">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1151" height="397" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805993" />
-    <state width="1151" height="397" key="GridCell.Tab.1.left" timestamp="1614609805993">
+    <state width="1676" height="480" key="GridCell.Tab.1.center/0.0.3440.1400@0.0.3440.1400" timestamp="1615993466768" />
+    <state width="1676" height="480" key="GridCell.Tab.1.left" timestamp="1615993466768">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1151" height="397" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805993" />
-    <state width="1151" height="397" key="GridCell.Tab.1.right" timestamp="1614609805993">
+    <state width="1676" height="480" key="GridCell.Tab.1.left/0.0.3440.1400@0.0.3440.1400" timestamp="1615993466768" />
+    <state width="1676" height="480" key="GridCell.Tab.1.right" timestamp="1615993466768">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state width="1151" height="397" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1614609805993" />
+    <state width="1676" height="480" key="GridCell.Tab.1.right/0.0.3440.1400@0.0.3440.1400" timestamp="1615993466768" />
     <state width="1151" height="397" key="GridCell.Tab.2.bottom" timestamp="1614609805993">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -393,10 +404,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1441" y="441" width="597" height="524" key="StructurePopup/0.0.3440.1400@0.0.3440.1400" timestamp="1615727097475" />
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1615817951777">
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2" timestamp="1615902145472">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615817951777" />
+    <state x="1312" y="414" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615902145472" />
     <state x="1543" y="466" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1614695659280">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -409,6 +420,10 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="92" y="92" width="3256" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1615627282708" />
+    <state x="2372" y="609" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615995430046">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2372" y="609" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.3440.1400@0.0.3440.1400" timestamp="1615995430046" />
     <state x="2281" y="420" width="596" height="568" key="find.popup" timestamp="1615627305558">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -421,9 +436,13 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1498" y="593" key="git4idea.remote.GitConfigureRemotesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1614691010062" />
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1615731022190">
+    <state x="1376" y="330" key="run.anything.popup" timestamp="1615995919173">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615731022190" />
+    <state x="1376" y="330" key="run.anything.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615995919173" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1615995210702">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1615995210702" />
   </component>
 </project>
