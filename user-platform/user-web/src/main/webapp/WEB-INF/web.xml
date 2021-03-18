@@ -17,7 +17,7 @@
     </listener>
 
     <listener>
-        <listener-class>org.geektimes.projects.user.web.listener.TestingListener</listener-class>
+        <listener-class>org.geektimes.projects.user.web.listener.JolokiaListener</listener-class>
     </listener>
 
     <servlet>
