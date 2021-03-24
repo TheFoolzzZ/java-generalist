@@ -1,4 +1,4 @@
-package org.geektimes.projects.user.web.listener;
+package org.geektimes.listener;
 
 import org.geektimes.context.ComponentContext;
 

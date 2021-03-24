@@ -1,4 +1,4 @@
-package org.geektimes.configuration.microprofile.config;
+package org.geektimes.configuration.microprofile.config.source;
 
 
 import org.eclipse.microprofile.config.Config;
@@ -47,7 +47,6 @@ public class JavaConfig implements Config {
         converterMap.put(Float.class, new FloatConverter());
         converterMap.put(Integer.class, new IntegerConverter());
         converterMap.put(Long.class, new LongConverter());
-        converterMap.put(Object.class, new ObjectConverter());
         converterMap.put(Short.class, new ShortConverter());
     }
 

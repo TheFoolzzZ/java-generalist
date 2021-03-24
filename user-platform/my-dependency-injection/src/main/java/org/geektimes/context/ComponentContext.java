@@ -18,12 +18,15 @@ import java.util.stream.Stream;
  */
 public class ComponentContext {
 
+    // this.getClass.getName
     public static final String CONTEXT_NAME = ComponentContext.class.getName();
 
+    // jndi的目录
     private static final String COMPONENT_ENV_CONTEXT_NAME = "java:comp/env";
 
     private static final Logger logger = Logger.getLogger(CONTEXT_NAME);
 
+    // servlet上下文
     private static ServletContext servletContext; // 请注意
     // 假设一个 Tomcat JVM 进程，三个 Web Apps，会不会相互冲突？（不会冲突）
     // static 字段是 JVM 缓存吗？（是 ClassLoader 缓存）
@@ -91,7 +94,7 @@ public class ComponentContext {
             injectComponents(component, componentClass);
             // 初始阶段 - {@link PostConstruct}
             processPostConstruct(component, componentClass);
-            // TODO 实现销毁阶段 - {@link PreDestroy}
+            // 实现销毁阶段 - {@link PreDestroy}
             processPreDestroy();
         });
     }
@@ -111,6 +114,7 @@ public class ComponentContext {
                 // 注入目标对象
                 field.set(component, injectedObject);
             } catch (IllegalAccessException e) {
+                logger.info(this.getClass().getName() + ":" + e.getMessage());
             }
         });
     }
@@ -132,10 +136,18 @@ public class ComponentContext {
     }
 
     private void processPreDestroy() {
-        // TODO: 通过 ShutdownHook 实现
         Runtime.getRuntime().addShutdownHook(new Thread(()->{
-            // 逐一调用这
-            componentsMap.values();
+            // 找到打有preDestroy标签的方法执行
+            componentsMap.values().forEach(component-> Arrays.stream(component.getClass().getMethods())
+                    .filter(methodCondition ->  !Modifier.isStatic(methodCondition.getModifiers())
+                            && methodCondition.isAnnotationPresent(PreDestroy.class))
+                    .forEach(method -> {
+                        try {
+                            method.invoke(component);
+                        } catch (Exception e) {
+                            logger.info(this.getClass().getName() + ":" + e.getMessage()+e);
+                        }
+                    }));
         }));
     }
 
