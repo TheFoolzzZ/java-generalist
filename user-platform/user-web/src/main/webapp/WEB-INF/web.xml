@@ -13,11 +13,11 @@
 
     <!-- 请确保这个 Listener 放置在首位 -->
     <listener>
-        <listener-class>org.geektimes.listener.ComponentContextInitializerListener</listener-class>
+        <listener-class>org.geektimes.projects.user.web.listener.ComponentContextInitializerListener</listener-class>
     </listener>
     
     <listener>
-        <listener-class>org.geektimes.projects.user.web.listener.JolokiaListener</listener-class>
+        <listener-class>org.geektimes.projects.user.web.listener.TestingListener</listener-class>
     </listener>
 
     <servlet>

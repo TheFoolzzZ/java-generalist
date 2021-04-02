@@ -8,7 +8,7 @@ import java.util.Set;
 
 /**
  * @description OSPropertiesConfigSource
- * @Author chengde.tan
+ * @Author TheFool
  * @Date 2021/3/17 23:58
  */
 public class  OSPropertiesConfigSource implements ConfigSource {

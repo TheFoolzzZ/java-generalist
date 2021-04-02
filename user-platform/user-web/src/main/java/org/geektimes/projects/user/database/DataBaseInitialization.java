@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 /**
  * @description
- * @Author chengde.tan
+ * @Author TheFool
  * @Date 2021/3/2 21:52
  */
 public class DataBaseInitialization {
