@@ -252,8 +252,7 @@ public class DefaultInvocationBuilder implements Invocation.Builder {
 
     @Override
     public Invocation buildPost(Entity<?> entity) {
-
-        return new HttpPostInvocation(uriBuilder.build(),headers, entity);
+        return null;
     }
 
     @Override

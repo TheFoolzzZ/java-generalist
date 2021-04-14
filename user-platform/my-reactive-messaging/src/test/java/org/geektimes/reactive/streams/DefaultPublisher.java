@@ -6,7 +6,6 @@ import org.reactivestreams.Subscriber;
 import java.util.LinkedList;
 import java.util.List;
 
-@SuppressWarnings({"rawtypes", "UnnecessaryLocalVariable", "Convert2MethodRef", "unchecked"})
 public class DefaultPublisher<T> implements Publisher<T> {
 
     private List<SubscriberWrapper> subscribers = new LinkedList<>();

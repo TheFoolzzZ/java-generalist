@@ -37,12 +37,12 @@ public class DefaultClient implements Client {
 
     @Override
     public WebTarget target(Link link) {
-        return target(UriBuilder.fromLink(link));
+        return null;
     }
 
     @Override
     public Invocation.Builder invocation(Link link) {
-        return target(link).request();
+        return null;
     }
 
     @Override
