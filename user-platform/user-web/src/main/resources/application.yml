@@ -1,0 +1,8 @@
+mybatis:
+    enabled: true
+    config-location: META-INF/mybatis/mybatis-config.xml
+    data-source: dataSource
+    mapper-locations: META-INF/mybatis/mappers/**/*.xml
+    properties: META-INF/mybatis/mybatis.properties
+    type-aliases: EmailTypeHandler.class
+    type-handlers: User.class

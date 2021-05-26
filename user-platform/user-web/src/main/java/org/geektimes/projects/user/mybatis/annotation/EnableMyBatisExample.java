@@ -21,6 +21,9 @@ import org.geektimes.projects.user.domain.User;
 import org.geektimes.projects.user.mybatis.interceptor.MyInterceptor;
 import org.geektimes.projects.user.orm.mybatis.EmailTypeHandler;
 import org.geektimes.projects.user.orm.mybatis.UserMapper;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
@@ -35,15 +38,7 @@ import java.util.List;
  * @since TODO
  * Date : 2021-05-06
  */
-@EnableMyBatis(dataSource = "dataSource",
-        configLocation = "classpath*:META-INF/mybatis/mybatis-config.xml",
-        mapperLocations = {"classpath*:sample/config/mappers/**/*.xml"},
-        environment = "development",
-        properties = "META-INF/mybatis/mybatis.properties",
-        typeAliases = {User.class},
-        typeHandlers = {EmailTypeHandler.class},
-        plugins = {MyInterceptor.class}
-)
+@SpringBootApplication
 @ImportResource(locations = "classpath*:sample/spring-context.xml") // SqlSessionFactoryBean
 public class EnableMyBatisExample {
 
@@ -58,14 +53,11 @@ public class EnableMyBatisExample {
     }
 
     public static void main(String[] args) throws Exception {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
-        applicationContext.register(EnableMyBatisExample.class);
-        applicationContext.refresh();
+        ConfigurableApplicationContext context = SpringApplication.run(EnableMyBatisExample.class);
 
-        UserMapper userMapper = applicationContext.getBean(UserMapper.class);
+        UserMapper userMapper = context.getBean(UserMapper.class);
         List<User> userList = userMapper.getAll();
         userList.forEach(System.out::println);
-        applicationContext.close();
     }
 
 }

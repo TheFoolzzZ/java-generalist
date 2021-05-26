@@ -67,7 +67,7 @@ public class MyBatisBeanDefinitionRegistrar implements ImportBeanDefinitionRegis
         beanDefinitionBuilder.addPropertyValue("mapperLocations", attributes.get("mapperLocations"));
         beanDefinitionBuilder.addPropertyValue("environment", resolvePlaceholder(attributes.get("environment")));
         // 自行添加其他属性
-        beanDefinitionBuilder.addPropertyValue("plugins", resolveInterceptor(attributes.get("plugins")));
+        beanDefinitionBuilder.addPropertyValue("plugins", resolveObjects(attributes.get("plugins")));
         beanDefinitionBuilder.addPropertyValue("typeHandlers", resolveTypeHandlers(attributes.get("typeHandlers")));
         beanDefinitionBuilder.addPropertyValue("typeAliases", resolveObjects(attributes.get("typeAliases")));
         beanDefinitionBuilder.addPropertyValue("configurationProperties", resolveProperties(attributes.get("properties")));
