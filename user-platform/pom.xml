@@ -22,6 +22,7 @@
         <module>user-data</module>
         <module>my-commons</module>
         <module>my-session</module>
+        <module>my-spring-cloud</module>
     </modules>
 
     <properties>
@@ -64,7 +65,11 @@
         <mybatis-spring.version>2.0.6</mybatis-spring.version>
 
         <!-- Spring 依赖版本 -->
-        <spring-boot.version>2.4.5</spring-boot.version>
+        <spring-boot.version>2.4.2</spring-boot.version>
+        <spring.cloud-version>2020.0.0</spring.cloud-version>
+        <!-- Spring Cloud Alibaba -->
+        <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
+        <dubbo.version>2.7.10</dubbo.version>
 
         <!-- Testing 版本 -->
         <junit.version>4.13</junit.version>
@@ -90,6 +95,26 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+            <!-- Spring Cloud Dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+            <!-- Spring Cloud Alibaba Dependencies -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

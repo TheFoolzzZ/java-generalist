@@ -1,0 +1,24 @@
+server:
+  port: 8888 # 如果使用随机可用端口 0 的话，请注意 Eureka 无法识别
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      url: ${SPRING_CONFIG_URI:http://localhost:8888}
+      server:
+        native:
+          searchLocations: classpath:META-INF/config/
+#        git:
+#          uri: file://${user.dir}/projects/stage-0/user-platform/spring-cloud-projects/spring-cloud-config-server/src/main/resources/config-repo
+
+
+# 配置 Eureka Client（可参考 EurekaClientConfigBean）
+# 配置 Eureka Client 示例（可参考 EurekaInstanceConfigBean）
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://127.0.0.1:12345/eureka'
