@@ -1,0 +1,2 @@
+redis:\
+org.geektimes.projects.spring.cloud.stream.binder.redis.config.RedisServiceAutoConfiguration

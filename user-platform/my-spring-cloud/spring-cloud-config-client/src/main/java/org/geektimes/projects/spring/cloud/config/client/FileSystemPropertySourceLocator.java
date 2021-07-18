@@ -5,6 +5,9 @@ import org.geektimes.projects.spring.cloud.config.client.env.ReloadablePropertie
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.bootstrap.config.PropertySourceLocator;
+import org.springframework.cloud.endpoint.event.RefreshEvent;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.annotation.Order;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.PropertySource;
@@ -19,7 +22,7 @@ import java.util.*;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
 
 @Order(0)
-public class FileSystemPropertySourceLocator implements PropertySourceLocator {
+public class FileSystemPropertySourceLocator implements PropertySourceLocator, ApplicationContextAware {
 
     private static final Logger logger = LoggerFactory.getLogger(FileSystemPropertySourceLocator.class);
 
@@ -32,9 +35,15 @@ public class FileSystemPropertySourceLocator implements PropertySourceLocator {
 
     private Environment environment;
     private ReloadablePropertiesPropertySource propertySource;
+    private ApplicationContext applicationContext;
 
     public void setEnvironment(Environment environment) {
         this.environment = environment;
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) {
+        this.applicationContext = applicationContext;
     }
 
     public FileSystemPropertySourceLocator() {
@@ -159,11 +168,7 @@ public class FileSystemPropertySourceLocator implements PropertySourceLocator {
                             //文件发生变化，重新加载
                             String fileName = watchEvent.context().toString();
                             logger.info("文件发生变化...{}", fileName);
-                            try {
-                                this.locator.reload();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
+                            FileSystemPropertySourceLocator.this.applicationContext.publishEvent(new RefreshEvent(this, null, "file refresh" ));
                         }
                     });
                     logger.info("目录监听中...");

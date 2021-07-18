@@ -43,7 +43,7 @@ import static org.springframework.beans.factory.support.BeanDefinitionBuilder.ge
  * TODO Comment
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since TODO
+ *
  * Date : 2021-05-06
  */
 public class MyBatisBeanDefinitionRegistrar implements ImportBeanDefinitionRegistrar, EnvironmentAware, ResourceLoaderAware {

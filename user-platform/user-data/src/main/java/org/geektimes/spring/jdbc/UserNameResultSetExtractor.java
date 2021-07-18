@@ -26,7 +26,7 @@ import java.sql.SQLException;
  * 用户名内容  {@link ResultSetExtractor}
  *
  * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
- * @since TODO
+ *
  * Date : 2021-04-15
  */
 public class UserNameResultSetExtractor implements ResultSetExtractor<String> {

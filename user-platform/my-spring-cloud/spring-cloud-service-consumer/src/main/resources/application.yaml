@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+echo:
+  service:
+    provider:
+      application:
+        name: spring-cloud-service-provider
+
+# Spring 应用名称
+spring:
+  application:
+    name: spring-cloud-service-consumer
+  cloud:
+    stream:
+      bindings:
+        springCloudBusInput:
+          destination: springCloudBus
+          group: foo
+  redis:
+    host: 192.168.8.43
+    port: 6379
+    password: gwsoft123
+    database: 1
+
+
+# 配置 Eureka Client（可参考 EurekaClientConfigBean）
+# 配置 Eureka Client 示例（可参考 EurekaInstanceConfigBean）
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://127.0.0.1:12345/eureka'

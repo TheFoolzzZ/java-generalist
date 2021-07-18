@@ -23,6 +23,7 @@
         <module>my-commons</module>
         <module>my-session</module>
         <module>my-spring-cloud</module>
+        <module>my-spring-native</module>
     </modules>
 
     <properties>
